@@ -13,7 +13,7 @@
 <body>
     <?php
         $testObj = new Test();
-        $testObj->getUsers();
+        $testObj->getUsersStmt("Daniela", "von Arb");
 
     ?>
     
