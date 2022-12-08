@@ -19,9 +19,12 @@ class Test extends Dbh {
 
         foreach ($names as $name) {
             echo $name['users_firstname'] . '<br>';
-
         }
-
     }
 
+    public function setUsersStmt($firstname, $lastname, $dob) {
+        $sql = "INSERT INTO users(users_firstname, users_lastname, users_dateofbirth) VALUES (?, ?, ?)";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$firstname, $lastname, $dob]);
+    }
 }
