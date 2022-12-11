@@ -12,8 +12,8 @@
 </head>
 <body>
     <?php
-        $testObj = new Test();
-        $testObj->setUsersStmt("Ben", "Loo", "1985-03-01");
+        $usersObj = new UsersView();
+        $usersObj->showUser("Daniela");
 
     ?>
     

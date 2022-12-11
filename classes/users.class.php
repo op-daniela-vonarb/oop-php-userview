@@ -8,7 +8,7 @@ class Users extends Dbh {
         $stmt->execute([$name]);
 
         $results = $stmt->fetchAll();
-        return $results
+        return $results;
     }
     
 }
