@@ -15,6 +15,9 @@
         $usersObj = new UsersView();
         $usersObj->showUser("Daniela");
 
+        $usersObj2 = new UsersContr();
+        $usersObj2->createUser("Jane", "Doe", "1996-05-08");
+
     ?>
     
 </body>

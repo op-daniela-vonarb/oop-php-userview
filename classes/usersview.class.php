@@ -1,5 +1,7 @@
 <?php
 
+//MVC = View
+
 class UsersView extends Users {
 
     public function showUser($name) {
